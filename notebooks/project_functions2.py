@@ -1,4 +1,3 @@
-# Michael's Project Function
 def load_and_process(url):
     df = (
         pd
@@ -15,22 +14,3 @@ def load_and_process(url):
     return df.reset_index(drop=True)
 
 
-
-
-# Raj's Project Function
-def load_and_process(url):
-    df = (
-        pd
-        .read_csv(url)
-        .drop(columns=['Phase','Time Period','Subgroup','Group','Time Period Start Date','Time Period Start Date','Time Period End Date','Low CI','High CI','Quartile Range'])
-        .dropna()
-        .rename(columns={"Percentage":"Level"})
-    )
-
-    df.drop(df[df["Indicator"] != "Symptoms of Anxiety Disorder"].index, inplace=True)
-    df.drop(df[df["State"] != "California"].index, inplace=True)
-    
-    return df.reset_index(drop=True)
-
-
-load_and_process("../data/raw/Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv")
