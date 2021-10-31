@@ -1,4 +1,4 @@
-Indicator,State,Time Period,Value,Confidence Interval
+Indicator,State,Time Period Label,Value,Confidence Interval
 Symptoms of Anxiety Disorder,California,"Apr 23 - May 5, 2020",30.8,28.2 - 33.5
 Symptoms of Anxiety Disorder,California,"May 7 - May 12, 2020",31.4,27.4 - 35.6
 Symptoms of Anxiety Disorder,California,"May 14 - May 19, 2020",32.3,29.0 - 35.7
