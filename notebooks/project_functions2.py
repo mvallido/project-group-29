@@ -15,3 +15,4 @@ def load_and_process(url):
     df.drop(df[df["Time Period Label"] != "Sep 15 - Sep 27, 2021"].index, inplace=True)
     
     return df.reset_index(drop=True)
+
